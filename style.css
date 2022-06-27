@@ -71,7 +71,7 @@ body.wrong{
   display: flex;
   justify-content: space-between; 
   flex-direction: column;
-  background-color: red;
+/*   background-color: red; */
 }
 
 /* Score*/
