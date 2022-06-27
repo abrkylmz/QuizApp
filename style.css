@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=Nova+Square&display=swap');
+
+* , *::before *::after{
+  box-sizing: border-box;
+}
+
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-size: 1.25rem;
+  font-family: 'Nova Square', cursive;
+}
+
+body{
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  display:flex;
+  width: 100vw;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  background: rgb(0, 0, 0);
+  text-align: center;
+  color: white;
+  flex-direction: column-reverse;
+}
+
+body.correct{
+  background: green;
+}
+body.wrong{
+  background: red;
+}
+
+.container{
+  width: 40%;
+  height: auto;
+  max-width: 80%;
+  background-color: rgb(0, 0, 0);
+  border-radius: 5px;
+  padding: 10px;
+  box-shadow: 0 0 10px 2px; 
+  
+}
+
+.flex-column{
+  display: flex;
+  flex-direction: column;
+}
+
+.flex-center{
+  justify-content: center;
+  align-items: center;
+}
+
+.justify-center{
+  justify-content: center;
+}
+
+.text-center{
+  text-align: center;
+}
+
+.hidden{
+  display: none;
+}
+
+#hud{
+  display: flex;
+  justify-content: space-between; 
+  flex-direction: column;
+  background-color: red;
+}
+
+/* Score*/
+.hud-prefix{
+  text-align:center;
+  font-size: 2rem;  
+}
+
+/*0 */
+.hud-main-text{
+  text-align: center; 
+  font-size: 2rem;  
+
+}
+
+.btn-grid{
+  height: 100px;
+  display: grid;
+  grid-template-columns: repeat(2,auto);
+  gap: 10px;
+  margin: 20px 0;
+}
+
+.btn{
+  /* border: 1px solid cornflowerblue ;
+  background-color: cornflowerblue; */
+  background: linear-gradient(90deg, rgb(18,92,255),
+  rgb(0,10,255)100%);
+  border-radius: 5px;
+  padding: 5px 10px;
+  color: white;
+  outline: none;
+  font-family: 'Nova Square', cursive;
+}
+
+.btn:hover{
+  cursor: pointer;
+  box-shadow: 0 0.4rem 1.4rem 0 rgb(8,114,224,0.6);
+  transition: transform 150ms;
+  transform: scale(1.03);
+}
+
+.btn.correct{
+  background: rgb(2, 199, 2);
+}
+
+.btn.wrong{
+  background: red;
+}
+
+.start-btn, .next-btn, .exit-btn{
+  align-items: center;
+  font-size: 1.5rem;
+  font-weight: bold;
+  padding: px 20px;
+}
+
+.controls{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hide{
+  display: none;
+}
+
